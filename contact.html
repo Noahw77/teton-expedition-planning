@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact • Teton Expedition Planning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lato:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body class="contact">
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container bar">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to homepage">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="word">Teton Expedition Planning</span>
+        </a>
+      </div>
+      <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">☰</button>
+      <nav class="nav nav-primary" data-nav-primary aria-label="Primary">
+        <a href="about.html">About</a>
+        <div class="dropdown" data-dropdown aria-expanded="false">
+          <button class="dropbtn" data-dropbtn aria-haspopup="true" aria-expanded="false">Trip Options ▾</button>
+          <div class="dropdown-menu" role="menu">
+            <a href="summer.html" role="menuitem">Summer</a>
+            <a href="winter.html" role="menuitem">Winter</a>
+          </div>
+        </div>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <h1>Start Planning Your Trip</h1>
+      <p class="lead">Tell us dates, group size, and interests. We’ll follow up within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section accent">
+    <div class="container">
+      <form class="card" style="padding:22px;display:grid;gap:14px" onsubmit="event.preventDefault(); alert('Thanks! We’ll be in touch.');">
+        <label>Full Name<input required type="text" name="name" placeholder="Jane Doe" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a3044;background:#0f131d;color:var(--text)"></label>
+        <label>Email<input required type="email" name="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a3044;background:#0f131d;color:var(--text)"></label>
+        <label>Dates<input type="text" name="dates" placeholder="e.g., June 10–14" style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a3044;background:#0f131d;color:var(--text)"></label>
+        <label>Interests<textarea name="interests" rows="4" placeholder="Wildlife, hiking, rafting..." style="width:100%;padding:12px;border-radius:10px;border:1px solid #2a3044;background:#0f131d;color:var(--text)"></textarea></label>
+        <button class="button" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container section">
+      <div class="grid cols-3">
+        <div>
+          <h4>Outdoors Meets Luxury</h4>
+          <p>Concierge trip planning across the Tetons, Yellowstone, and the Mountain West. Bespoke itineraries, local access.</p>
+          <div class="tag">Jackson Hole • Yellowstone • Rockies</div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p><a href="about.html">About</a><br><a href="partners.html">Partners</a><br><a href="summer.html">Summer Trips</a><br><a href="winter.html">Winter Trips</a></p>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <p>Email: <a href="mailto:info@example.com">info@example.com</a><br>Phone: <a href="tel:+13078281885">(307) 828-1885</a></p>
+          <p><a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="LinkedIn">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="copy">© 2025 Teton Expedition Planning. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
