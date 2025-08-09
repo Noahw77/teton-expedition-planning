@@ -19,3 +19,14 @@ document.addEventListener('click', (e)=>{
     dropdown?.setAttribute('aria-expanded','false');
   }
 });
+
+// ===== In-view animations =====
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('is-inview');
+      observer.unobserve(e.target);
+    }
+  })
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
